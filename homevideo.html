@@ -14,7 +14,6 @@
     <!-- CSS styles -->
     <link href="css/bootstrap-rtl.min.css" rel="stylesheet">
     <link href="css/owl.carousel.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
-    <link href="css/swiper.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
     <link href="css/animate.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
     <link href="css/style-rtl.min.css" rel="stylesheet">
     <!-- Custom color styles -->
@@ -23,48 +22,90 @@
     <link href="css/colors/green.css" rel="stylesheet" title="green" media="none" onload="if(media!='all')media='all'"/>
   </head>
   <body>
-
+  <!-- ***** LOADING PAGE ****** -->
   <!-- ***** UPLOADED MENU FROM HEADER.HTML ***** -->
   <header id="header"> </header>
   <!-- ***** SLIDER ***** -->
   <section id="owl-demo" class="owl-carousel owl-theme owl-loaded owl-drag">
-    <div class="full h-100 sec-bg6">
+    <div class="full h-100 overlay-video">
       <div class="vc-parent">
         <div class="vc-child">
           <div class="top-banner">
             <div class="container">
-              <img class="svg custom-element-right" src="patterns/rack.svg" alt="Dedicated Server">
-              <div class="heading">سرور اختصاصی <div class="animatype">با <span id="typed3"></span></div></div>
-              <h3 class="subheading">سرورهای قدرتمند و دارای منابع رده بالا  <br>که منحصر به فرد بودن منابع را تضمین می کند,  <br>شروع از  <b class="c-pink">250000 تومان /ماهانه</b><br>
-              </h3>
-              <a href="dedicated" class="btn btn-default-yellow-fill mr-3">مشاهده پلن ها</a>
-              <a href="dedicated" class="btn btn-default-pink-fill">بیشتر بدانید</a>
+              <div class="covervid-wrapper">
+                <video class="covervid-video" autoplay loop muted poster="img/topbanner06.jpg">
+                  <source src="videos/planet.mp4" type="video/mp4">
+                </video>
+              </div>
+              <img class="svg custom-element-right" src="patterns/domains.svg" alt="Domains">
+              <h1 class="heading">ثبت و تمدید <br>دامنه</h1>
+              <h3 class="subheading">نام انتخابی خود را جست و جو کنید <b class="c-pink">از 5000تومان</b></h3>
+              <form action="http://inebur.com/whmcs/domainchecker.php?systpl=antler" method="post">
+                <div class="general-input w-50">
+                  <input type="text" name="domain" placeholder="Start your search here" class="fill-input">
+                  <input type="submit" value="Search" class="btn btn-default-yellow-fill">
+                </div>
+              </form>
+              <div class="domain-prices">
+                <ul>
+                  <li class="tld">.com <div class="price">15000<sup>تومان</sup></div></li>
+                  <li class="tld">.net <div class="price">15000<sup>تومان</sup></div></li>
+                  <li class="tld">.org <div class="price">15000<sup>تومان</sup></div></li>
+                  <li class="tld">.us <div class="price">15000<sup>تومان</sup></div></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="full h-100 sec-bg6">
+    <div class="full h-100 overlay-video">
       <div class="vc-parent">
         <div class="vc-child">
           <div class="top-banner">
             <div class="container">
-              <img class="svg custom-element-right" src="patterns/cloudvps.svg" alt="Cloud VPS Server">
-              <h1 class="heading">سرویس <br>سرور ابری</h1>
-              <h3 class="subheading">
-                <i class="c-pink feat fas fa-check-circle mr-2"></i> سرور های قدرتمند<br>
-                <i class="c-pink feat fas fa-check-circle mr-2"></i> عملکرد و آپتایم بالا<br>
-                <i class="c-pink feat fas fa-check-circle mr-2"></i> سازگاری با CMS ها
-              </h3>
-              <a href="vps" class="btn btn-default-yellow-fill mr-3">مشاهده پلن ها</a>
-              <a href="vps" class="btn btn-default-pink-fill">بیشتر بدانید</a>
+              <div class="covervid-wrapper">
+                <video class="covervid-video" autoplay loop muted poster="img/topbanner07.jpg">
+                  <source src="videos/server.mp4" type="video/mp4">
+                </video>
+              </div>
+              <img class="svg custom-element-right" src="patterns/hostingpanel.svg" alt="Cloud VPS Server">
+              <h1 class="heading">میزبانی اشتراکی</h1>
+              <h3 class="subheading">زیرساخت میزبانی سریع و پایدار</h3>
+              <div class="included">
+                <div class="row">
+                  <div class="col-sm-5 col-md-3 col-lg-3 col-xl-2">
+                    <ul>
+                      <li><i class="fas fa-check-circle"></i> c-Panel یا Plesk</li>
+                    </ul>
+                    <ul>
+                      <li><i class="fas fa-check-circle"></i> ایمیل نامحدود</li>
+                    </ul>
+                    <ul>
+                      <li><i class="fas fa-check-circle"></i> گواهینامه SSL رایگان</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-5 col-md-3 col-lg-3 col-xl-2 secfeat">
+                    <ul>
+                      <li><i class="fas fa-check-circle"></i> اختصاصی DNS</li>
+                    </ul>
+                    <ul>
+                      <li><i class="fas fa-check-circle"></i> فضای هارد SSD</li>
+                    </ul>
+                    <ul>
+                      <li><i class="fas fa-check-circle"></i> پشتیبانی 24/7/365</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <a href="hosting" class="btn btn-default-yellow-fill mr-3 mt-3">مشاهده پلن ها</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- ***** PRICING TABLES ***** -->
+ <!-- ***** PRICING TABLES ***** -->
   <section class="pricing special sec-up-slider">
     <div class="container">
       <div class="row">
@@ -203,7 +244,7 @@
       </div>
     </div>
   </section>
-  <!-- ***** MAP ***** -->
+ <!-- ***** MAP ***** -->
   <section class="services maping sec-normal sec-grad-grey-to-grey">
     <div class="container">
       <div class="service-wrap">
@@ -221,44 +262,6 @@
             <span data-toggle="popover" data-container="body" data-trigger="hover" data-placement="top" title="" class="datacenters moskow" data-original-title="مسکو" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم"></span>
             <span data-toggle="popover" data-container="body" data-trigger="hover" data-placement="top" title="" class="datacenters hongkong" data-original-title="هنگ کونگ" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم"></span>
             <span data-toggle="popover" data-container="body" data-trigger="hover" data-placement="top" title="" class="datacenters singapure" data-original-title="سنگاپور" data-content="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم"></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ***** CASE STUDY ***** -->
-  <section class="casestudy">
-    <div class="container">
-      <div class="sec-main sec-up bg-pink mb-0">
-        <img data-src="img/casestudy.png" class="lazyload" alt="Case Study">
-        <div class="plans badge feat bg-purple">مطالعه موردی</div>
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-9">
-            <div class="slider-container slider-filter">
-              <div class="slider-wrap">
-                <div class="swiper-container main-slider" data-autoplay="4000" data-touch="1" data-mouse="0" data-slides-per-view="responsive" data-loop="1" data-speed="1200" data-mode="horizontal" data-xs-slides="1" data-sm-slides="1" data-md-slides="1" data-lg-slides="1">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <h3 class="author">گروه اورت</h3>
-                      <div class="content-info">
-                        <p>با استفاده از خطا و نشاط خطا ، نشانه گذاری کنید و با استفاده از خطا ، نشر کامل و اکتشافی را از بین ببرید.</p>
-                        <em> مایکل جونز - مدیر اجرایی</em>
-                      </div>
-                      <a href="casestudy/casestudy-everthgroup.pdf" class="btn btn-default-yellow-fill mb-2">بارگیری مطالعه موردی</a>
-                    </div>
-                    <div class="swiper-slide">
-                      <h3 class="author">شرکت Growtop</h3>
-                      <div class="content-info">
-                        <p>با استفاده از خطا و نشاط خطا ، نشانه گذاری کنید و با استفاده از خطا ، نشر کامل و اکتشافی را از بین ببرید.</p>
-                        <em> مت رادفورد - رئیس جمهور و مدیر عامل</em>
-                      </div>
-                      <a href="casestudy/casestudy-growtop.pdf" class="btn btn-default-yellow-fill mb-2">بارگیری مطالعه موردی</a>
-                    </div>
-                  </div>
-                  <div class="pagination vertical-mode pagination-index"></div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -318,7 +321,6 @@
 <a href="#0" class="cd-top"> <i class="fas fa-angle-up"></i> </a>
 <!-- Javascript -->
 <script src="js/jquery.min.js"></script>
-<script src="js/typed.js"></script>
 <script defer src="js/popper.min.js"></script>
 <script defer src="js/bootstrap.min.js"></script>
 <script defer src="js/jquery.countdown.js"></script>
@@ -327,18 +329,11 @@
 <script defer src="js/owl.carousel.min.js"></script>
 <script defer src="js/isotope.min.js"></script>
 <script defer src="js/swiper.min.js"></script>
-<script async src="js/lazysizes.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script>new WOW().init();</script>
+<script src="js/covervid.min.js"></script>
+<script async src="js/lazysizes.min.js"></script>
 <script defer src="js/scripts.min.js"></script>
-<script>
-var typed3 = new Typed('#typed3', {
-strings: ["سخت افزار اختصاصی.", "سرعت عمل بالا.", "منابع کاملا اختصاصی."],
-typeSpeed: 50,
-backSpeed: 20,
-smartBackspace: true,
-loop: true
-});
-</script>
+<script>$('.covervid-video').coverVid(1920, 1080);</script>
 </body>
 </html>

@@ -14,7 +14,7 @@
     <!-- CSS styles -->
     <link href="css/bootstrap-rtl.min.css" rel="stylesheet">
     <link href="css/owl.carousel.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
-    <link href="css/swiper.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <link href="css/filter-rtl.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
     <link href="css/style-rtl.min.css" rel="stylesheet">
     <!-- Custom color styles -->
@@ -23,48 +23,55 @@
     <link href="css/colors/green.css" rel="stylesheet" title="green" media="none" onload="if(media!='all')media='all'"/>
   </head>
   <body>
-
+  <!-- ***** LOADING PAGE ****** -->
   <!-- ***** UPLOADED MENU FROM HEADER.HTML ***** -->
   <header id="header"> </header>
   <!-- ***** SLIDER ***** -->
-  <section id="owl-demo" class="owl-carousel owl-theme owl-loaded owl-drag">
-    <div class="full h-100 sec-bg6">
+  <section id="owl-demo" class="owl-carousel owl-theme owl-loaded owl-drag scrollme">
+    <div class="full h-100 item11 overlay animateme" data-when="exit" data-from="0" data-to="0.75" data-opacity="1" data-translatey="-100">
       <div class="vc-parent">
         <div class="vc-child">
           <div class="top-banner">
             <div class="container">
-              <img class="svg custom-element-right" src="patterns/rack.svg" alt="Dedicated Server">
-              <div class="heading">سرور اختصاصی <div class="animatype">با <span id="typed3"></span></div></div>
-              <h3 class="subheading">سرورهای قدرتمند و دارای منابع رده بالا  <br>که منحصر به فرد بودن منابع را تضمین می کند,  <br>شروع از  <b class="c-pink">250000 تومان /ماهانه</b><br>
-              </h3>
-              <a href="dedicated" class="btn btn-default-yellow-fill mr-3">مشاهده پلن ها</a>
-              <a href="dedicated" class="btn btn-default-pink-fill">بیشتر بدانید</a>
+              <img class="svg custom-element-right" src="patterns/voip.svg" alt="Cloud VPS Server">
+              <h1 class="heading">شماره <br>مجازی</h1>
+              <div class="included">
+                <div class="row">
+                  <div class="col-md-12">
+                    <ul>
+                      <li><i class="fas fa-check-circle"></i> سریع شماره های رایگان را بخرید</li>
+                    </ul>
+                    <ul>
+                      <li><i class="fas fa-check-circle"></i> 0+ ویژگی های شماره VOIP گنجانده شده است </li>
+                    </ul>
+                    <ul>
+                      <li><i class="fas fa-check-circle"></i> تماس تلفنی رایگان به هر مکان</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <a href="voip" class="btn btn-default-yellow-fill mr-3 mt-3">مشاهده پلن ها</a>
+              <a href="voip" class="btn btn-default-pink-fill mt-3">بیشتر بدانید</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="full h-100 sec-bg6">
+    <div class="full h-100 item10 overlay animateme" data-when="exit" data-from="0" data-to="0.75" data-opacity="1" data-translatey="-100">
       <div class="vc-parent">
         <div class="vc-child">
           <div class="top-banner">
             <div class="container">
-              <img class="svg custom-element-right" src="patterns/cloudvps.svg" alt="Cloud VPS Server">
-              <h1 class="heading">سرویس <br>سرور ابری</h1>
-              <h3 class="subheading">
-                <i class="c-pink feat fas fa-check-circle mr-2"></i> سرور های قدرتمند<br>
-                <i class="c-pink feat fas fa-check-circle mr-2"></i> عملکرد و آپتایم بالا<br>
-                <i class="c-pink feat fas fa-check-circle mr-2"></i> سازگاری با CMS ها
-              </h3>
-              <a href="vps" class="btn btn-default-yellow-fill mr-3">مشاهده پلن ها</a>
-              <a href="vps" class="btn btn-default-pink-fill">بیشتر بدانید</a>
+              <img class="svg custom-element-right" src="patterns/iptvdevices.svg" alt="Domains">
+              <h1 class="heading">سرویس <br>اختصاصی <br>IPTV</h1>
+              <h3 class="subheading">ورزش ، سینما ، سریال ، جوانان ، اکتشاف و موارد دیگر.<br> ما تمام برنامه های شما را دوست دارید جمع کرده ایم. <br><b class="c-pink">اکنون فقط با 9.99 دلار در سال مشترک شوید</b></h3>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- ***** PRICING TABLES ***** -->
+ <!-- ***** PRICING TABLES ***** -->
   <section class="pricing special sec-up-slider">
     <div class="container">
       <div class="row">
@@ -123,7 +130,7 @@
       </div>
     </div>
   </section>
-  <!-- ***** LOAD BALANCING ***** -->
+ <!-- ***** LOAD BALANCING ***** -->
   <section class="balancing sec-normal bg-white pb-80">
     <div class="h-services">
       <div class="container">
@@ -158,7 +165,7 @@
       </div>
     </div>
   </section>
-  <!-- ***** FEATURES ***** -->
+   <!-- ***** FEATURES ***** -->
   <section class="services sec-normal motpath sec-bg4">
     <div class="container">
       <div class="service-wrap">
@@ -203,7 +210,7 @@
       </div>
     </div>
   </section>
-  <!-- ***** MAP ***** -->
+<!-- ***** MAP ***** -->
   <section class="services maping sec-normal sec-grad-grey-to-grey">
     <div class="container">
       <div class="service-wrap">
@@ -226,45 +233,68 @@
       </div>
     </div>
   </section>
-  <!-- ***** CASE STUDY ***** -->
-  <section class="casestudy">
+  <!-- ***** CONTACT FORM ***** -->
+  <section id="ticket" class="sec-up mb-0">
     <div class="container">
-      <div class="sec-main sec-up bg-pink mb-0">
-        <img data-src="img/casestudy.png" class="lazyload" alt="Case Study">
-        <div class="plans badge feat bg-purple">مطالعه موردی</div>
+      <div class="sec-main sec-bg1">
+        <div class="randomline">
+          <div class="bigline"></div>
+          <div class="smallline"></div>
+        </div>
         <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-9">
-            <div class="slider-container slider-filter">
-              <div class="slider-wrap">
-                <div class="swiper-container main-slider" data-autoplay="4000" data-touch="1" data-mouse="0" data-slides-per-view="responsive" data-loop="1" data-speed="1200" data-mode="horizontal" data-xs-slides="1" data-sm-slides="1" data-md-slides="1" data-lg-slides="1">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <h3 class="author">گروه اورت</h3>
-                      <div class="content-info">
-                        <p>با استفاده از خطا و نشاط خطا ، نشانه گذاری کنید و با استفاده از خطا ، نشر کامل و اکتشافی را از بین ببرید.</p>
-                        <em> مایکل جونز - مدیر اجرایی</em>
-                      </div>
-                      <a href="casestudy/casestudy-everthgroup.pdf" class="btn btn-default-yellow-fill mb-2">بارگیری مطالعه موردی</a>
-                    </div>
-                    <div class="swiper-slide">
-                      <h3 class="author">شرکت Growtop</h3>
-                      <div class="content-info">
-                        <p>با استفاده از خطا و نشاط خطا ، نشانه گذاری کنید و با استفاده از خطا ، نشر کامل و اکتشافی را از بین ببرید.</p>
-                        <em> مت رادفورد - رئیس جمهور و مدیر عامل</em>
-                      </div>
-                      <a href="casestudy/casestudy-growtop.pdf" class="btn btn-default-yellow-fill mb-2">بارگیری مطالعه موردی</a>
+          <div class="col-md-12 col-lg-12 cd-filter-block mb-0">
+            <div class="form-contact cd-filter-content p-0 sec-bx">
+              <h2 class="section-heading mb-1">برای تماس با ما فرم تماس را پر کنید</h2>
+              <p >ما برای انتخاب بهترین پلن به شما کمک خواهیم کرد!</p>
+              <form id="contactForm" method="POST">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label><i class="fas fa-user-tie"></i></label>
+                    <input id="name" type="text" name="name" placeholder="نام و نام خانوادگی" required="">
+                  </div>
+                  <div class="col-md-6">
+                    <label><i class="fas fa-envelope"></i></label>
+                    <input id="email" type="email" name="email" placeholder="ایمیل" required="">
+                  </div>
+                  <div class="col-md-6">
+                    <label><i class="fas fa-file-alt"></i></label>
+                    <input id="subject" type="text" name="subject" placeholder="موضوع" required>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="cd-select mt-4">
+                      <label class="db"></label>
+                      <select id="department" name="department" class="select-filter">
+                        <option value="">انتخاب دپارتمان</option>
+                        <option value="Support/Help Desk">پشتیباتی</option>
+                        <option value="Commercial Department">بازاریابی</option>
+                        <option value="Sales Department">فروش</option>
+                        <option value="Schedule Metings">هماهنگی جلسات</option>
+                      </select>
                     </div>
                   </div>
-                  <div class="pagination vertical-mode pagination-index"></div>
+                  <div class="col-md-6">
+                    <div class="form-group mt-4">
+                      <textarea id="message" name="message" class="form-control" rows="5" placeholder="پیام..."></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mt-5">
+                    <input name="newsletter" type="checkbox" id="checkbox" class="filter">
+                    <label for="checkbox" class="checkbox-label c-grey mb-4" ><div>من شرایط سیاست حفظ حریم خصوصی را خوانده و پذیرفته ام - <a href="legal" class="golink">قوانین</a></div></label>
+                    <button type="submit" value="Submit" class="btn btn-default-yellow-fill float-left mr-3">ارسال تیکت</button>
+                    <button type="reset" value="reset" class="btn btn-default-fill mt-0 mb-3 mr-3">بازنشانی</button><br>
+                  </div>
+                  <div id="msgSubmit" class="col-md-12 mt-4">
+                    <h3 class="c-pink"> پیام ارسال شد!</h3>
+                  </div>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- ***** HELP ***** -->
+ <!-- ***** HELP ***** -->
   <section class="services help pt-4 pb-80">
     <div class="container">
       <div class="service-wrap">
@@ -318,7 +348,6 @@
 <a href="#0" class="cd-top"> <i class="fas fa-angle-up"></i> </a>
 <!-- Javascript -->
 <script src="js/jquery.min.js"></script>
-<script src="js/typed.js"></script>
 <script defer src="js/popper.min.js"></script>
 <script defer src="js/bootstrap.min.js"></script>
 <script defer src="js/jquery.countdown.js"></script>
@@ -326,19 +355,11 @@
 <script defer src="js/slick.min.js"></script>
 <script defer src="js/owl.carousel.min.js"></script>
 <script defer src="js/isotope.min.js"></script>
+<script defer src="js/jquery.scrollme.min.js"></script>
 <script defer src="js/swiper.min.js"></script>
-<script async src="js/lazysizes.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script>new WOW().init();</script>
+<script async src="js/lazysizes.min.js"></script>
 <script defer src="js/scripts.min.js"></script>
-<script>
-var typed3 = new Typed('#typed3', {
-strings: ["سخت افزار اختصاصی.", "سرعت عمل بالا.", "منابع کاملا اختصاصی."],
-typeSpeed: 50,
-backSpeed: 20,
-smartBackspace: true,
-loop: true
-});
-</script>
 </body>
 </html>

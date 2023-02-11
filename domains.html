@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Antler | دامین</title>
+    <meta name="description" content="">
+    <link href="img/favicon.ico" rel="shortcut icon">
+    <!-- Fonts -->
+    <link href="fonts/cloudicon/cloudicon.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <link href="fonts/fontawesome/css/all.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <link href="fonts/opensans/opensans.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <!-- CSS styles -->
+    <link href="css/bootstrap-rtl.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <link href="css/filter-rtl.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <link href="css/mixitup.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <link href="css/style-rtl.min.css" rel="stylesheet">
+    <!-- Custom color styles -->
+    <link href="css/colors/pink.css" rel="stylesheet" title="pink" media="none" onload="if(media!='all')media='all'"/>
+    <link href="css/colors/blue.css" rel="stylesheet" title="blue" media="none" onload="if(media!='all')media='all'"/>
+    <link href="css/colors/green.css" rel="stylesheet" title="green" media="none" onload="if(media!='all')media='all'"/>
+  </head>
+  <body>
+  <!-- ***** LOADING PAGE ****** -->
+  <!-- ***** UPLOADED MENU FROM HEADER.HTML ***** -->
+  <header id="header"> </header>
+  <!-- ***** SLIDER ***** -->
+  <div class="top-header item6 overlay scrollme animateme" data-when="span" data-from="0" data-to="0.75" data-opacity="1" data-translatey="-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12">
+          <div class="wrapper">
+            <h1 class="heading">نام دامنه ایده آل را فیلتر کنید</h1>
+            <h3 class="subheading mb-4">از میان صدها برنامه افزودنی انتخاب کنید و وب سایت خود را در جهان قرار دهید.</h3>
+            <form class="mb-5" action="" method="post">
+              <div class="general-input w-50">
+                <input type="text" name="domain" placeholder="نام دامنه را وارد کنید" class="fill-input">
+                <input type="submit" value="جستوجو" class="btn btn-default-yellow-fill">
+              </div>
+            </form>
+            <a class="btn btn-default-pink-fill cd-filter-trigger wow animated shake delay-2s"><i class="fa fa-filter"></i> Show Filter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** CONTROLS ***** -->
+  <section class="cd-main-content mb-80 sec-up wow animated fadeInUp fast">
+    <div class="cd-filter">
+      <form>
+        <div class="container">
+          <div class="sec-main pb-5 sec-bg1">
+            <div class="plans badge feat bg-pink">فیلتر</div>
+            <div class="row">
+              <a href="#0" class="cd-close"><i class="fas fa-long-arrow-alt-right"></i></a>
+              <div class="col-md-6">
+                <div class="cd-filter-block">
+                  <h4>پرطرفدار</h4>
+                  <ul class="radio-group radios-filter cd-filter-content list">
+                    <li>
+                      <input value="all" type="radio" name="radioButton" id="radio1" checked/>
+                      <label class="radio-label" for="radio1">همه دامنه ها</label>
+                    </li>
+                    <li>
+                      <input value=".sale" type="radio" name="radioButton" id="radio2">
+                      <label class="radio-label" for="radio2">فروش</label>
+                    </li>
+                    <li>
+                      <input value=".newest" type="radio" name="radioButton" id="radio3">
+                      <label class="radio-label" for="radio3">جدید</label>
+                    </li>
+                    <li>
+                      <input value=".popular" type="radio" name="radioButton" id="radio4">
+                      <label class="radio-label" for="radio4">متداول</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="cd-filter-block checkbox-group">
+                  <h4>نوع</h4>
+                  <ul class="cd-filter-content cd-filters list">
+                    <li>
+                      <input class="filter" value=".gtld" type="checkbox" id="checkbox1">
+                      <label class="checkbox-label" for="checkbox1">gtld (عمومی)</label>
+                    </li>
+                    <li>
+                      <input class="filter" value=".cctld" type="checkbox" id="checkbox2">
+                      <label class="checkbox-label" for="checkbox2">cctld (کشوری)</label>
+                    </li>
+                    <li>
+                      <input class="filter" value=".ngtld" type="checkbox" id="checkbox3">
+                      <label class="checkbox-label" for="checkbox3">ngtld (خبری)</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="cd-filter-block">
+                  <div class="cd-filter-content cd-select">
+                    <select class="select-filter">
+                      <option value="all">انتخاب کنید</option>
+                      <option value=".business">Business</option>
+                      <option value=".commerce">Commerce</option>
+                      <option value=".social">Social</option>
+                      <option value=".health">Health</option>
+                      <option value=".educations">Education</option>
+                      <option value=".technology">Technology</option>
+                      <option value=".others">Others</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="cd-filter-block checkbox-group">
+                  <input type="text" class="input" data-ref="input-search" placeholder="یک دامنه وارد کنید (.com)"/>
+                </div>
+              </div>
+              <div class="range-disabled">
+                <input name="minSize" class="range-slider-input tooltip-parent" type="range" min="0" max="5" value="0"/>
+                <input name="maxSize" class="range-slider-input tooltip-parent" type="range" min="0" max="5" value="5"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- ***** FILTER PLANS ***** -->
+  <div class="mixcontainer sec-normal sec-bg2 motpath" data-ref="container">
+    <div class="container ">
+      <div class="pricing special">
+        <div class="p-0 m-0">
+          <div class="best-plans pricing">
+            <div class="sec-main sec-bg1">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="table-responsive-lg">
+                    <table class="table compare">
+                      <thead>
+                        <tr>
+                          <td class="bb-pink pt-0 title ">Extensions (TLD)</td>
+                          <td class="bb-pink pt-0 title">ثبت</td>
+                          <td class="bb-pink pt-0 title">تمدید</td>
+                          <td class="bb-pink pt-0 title">انتقال</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="mix ext gtld  popular others .com">
+                          <td><div class="badge bg-grey mr-1">متداول</div> <span class="c-black">.com</span></td>
+                          <td>$16.00</td>
+                          <td>$19.90</td>
+                          <td>$19.90</td>
+                        </tr>
+                        <tr class="mix ext gtld sale others  .info">
+                          <td><div class="badge bg-pink mr-1">فروش</div> <span class="c-black">.info</span></td>
+                          <td><span class="ltgh">$11.90</span>  <b class="c-pink">$7.99</b></td>
+                          <td>$11.90</td>
+                          <td>$14.00</td>
+                        </tr>
+                        <tr class="mix ext ngtld newest health .hospital">
+                          <td><div class="badge bg-purple mr-1">جدید</div> <span class="c-black">.hospital</span></td>
+                          <td>$52.24</td>
+                          <td>$52.24</td>
+                          <td>$59.00</td>
+                        </tr>
+                        <tr class="mix ext gtld popular others .org">
+                          <td><div class="badge bg-grey mr-1">متداول</div> <span class="c-black">.org</span></td>
+                          <td>$9.00</td>
+                          <td>$12.90</td>
+                          <td>$12.90</td>
+                        </tr>
+                        <tr class="mix ext gtld others .co.uk">
+                          <td> <span class="c-black">.co.uk</span></td>
+                          <td>$32.00</td>
+                          <td>$36.90</td>
+                          <td>$36.90</td>
+                        </tr>
+                        <tr class="mix ext ngtld newest health .healthcare">
+                          <td> <div class="badge bg-purple mr-1">جدید</div> <span class="c-black">.healthcare</span></td>
+                          <td>$32.00</td>
+                          <td>$36.90</td>
+                          <td>$36.90</td>
+                        </tr>
+                        <tr class="mix ext ngtld sale technology .blog">
+                          <td> <div class="badge bg-pink mr-1">فروش</div> <span class="c-black">.blog</span></td>
+                          <td><span class="ltgh">$45.10</span>  <b class="c-pink">$26.00</b></td>
+                          <td>$45.10</td>
+                          <td>$45.10</td>
+                        </tr>
+                        <tr class="mix ext ngtld newest commerce .banque">
+                          <td> <div class="badge bg-purple mr-1">جدید</div> <span class="c-black">.banque</span></td>
+                          <td>$32.00</td>
+                          <td>$36.90</td>
+                          <td>$36.90</td>
+                        </tr>
+                        <tr class="mix ext cctld popular .eu">
+                          <td> <div class="badge bg-grey mr-1">متداول</div> <span class="c-black">.eu</span></td>
+                          <td>$5.80</td>
+                          <td>$5.80</td>
+                          <td>$7.00</td>
+                        </tr>
+                        <tr class="mix ext cctld popular .pt">
+                          <td> <div class="badge bg-grey mr-1">متداول</div> <span class="c-black">.pt</span></td>
+                          <td>$13.00</td>
+                          <td>$13.00</td>
+                          <td>$19.90</td>
+                        </tr>
+                        <tr class="mix ext ngtld newest business .company">
+                          <td> <span class="c-black">.company</span></td>
+                          <td>$13.00</td>
+                          <td>$13.00</td>
+                          <td>$19.90</td>
+                        </tr>
+                        <tr class="mix ext ngtld newest social .church">
+                          <td> <span class="c-black">.church</span></td>
+                          <td>$42.00</td>
+                          <td>$42.00</td>
+                          <td>$42.00</td>
+                        </tr>
+                        <tr class="mix ext ngtld sale social .democrat">
+                          <td><div class="badge bg-pink mr-1">فروش</div><span class="c-black">.democrat</span></td>
+                          <td><span class="ltgh">$35.10</span>  <b class="c-pink">$19.00</b></td>
+                          <td>$35.10</td>
+                          <td>$42.90</td>
+                        </tr>
+                        <tr class="mix ext ngtld popular educations .academy">
+                          <td> <span class="c-black">.academy</span></td>
+                          <td>$112.10</td>
+                          <td>$112.10</td>
+                          <td>$112.10</td>
+                        </tr>
+                        <tr class="mix ext ngtld sale health .dentist">
+                          <td><div class="badge bg-pink mr-1">فروش</div><span class="c-black">.dentist</span></td>
+                          <td><span class="ltgh">$50.10</span>  <b class="c-pink">$25.05</b></td>
+                          <td>$50.10</td>
+                          <td>$72.90</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="cd-fail-message">" هیچ موردی مطابق با معیارها یافت نشد "</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** FEATURES ***** -->
+  <section id="scroll" class="history-section feat01 sec-normal">
+    <div class="container">
+      <div class="randomline">
+        <div class="bigline"></div>
+        <div class="smallline"></div>
+      </div>
+      <div class="sec-main sec-bg1">
+        <div class="row">
+          <div class="col-md-12 col-lg-6 wow animated fadeInUp fast first">
+            <img class="svg" src="patterns/domainmanage.svg" alt="domain management">
+          </div>
+          <div class="col-md-12 col-lg-5 offset-lg-1">
+            <div class="info-content">
+              <h4>مدیریت آسان دامنه</h4>
+              <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+            </div>
+            <a href="" class="btn btn-default-yellow-fill mt-3">بیشتر بدانید</a>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-12 col-lg-5">
+            <div class="info-content">
+              <h4>تمدید خودکار دامنه</h4>
+              <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+            </div>
+            <a href="" class="btn btn-default-yellow-fill mt-3">تمدید خودکار</a>
+          </div>
+          <div class="col-md-12 col-lg-6 offset-lg-1 backups anima wow animated fadeInUp fast second">
+            <img class="svg" src="patterns/domainrenewal.svg" alt="domain renewal">
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-12 col-lg-6 wow animated fadeInUp fast third">
+            <img class="svg" src="patterns/support.svg" alt="support 24/7/365">
+          </div>
+          <div class="col-md-12 col-lg-5 offset-lg-1">
+            <div class="info-content">
+              <h4>نگران نباش ما حق بیمه پشتیبانی 24/7/365 را داریم</h4>
+              <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+            </div>
+            <a href="" class="btn btn-default-yellow-fill mt-3">دریافت پشتیبانی</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** CUSTOMIZE ***** -->
+  <section class="sec-normal history-section custom sec-bg3">
+    <div class="faq">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <h2 class="section-heading text-white">کنترل پیشرفته دامنه آسان شده است</h2>
+            <p class="section-subheading">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+          </div>
+          <div class="col-md-12 col-sm-12">
+            <div class="section-offer services w-100">
+              <div class="tabs offers-tabs">
+                <div class="tabs-header mb-5">
+                  <ul>
+                    <li class="col-lg-3 col-md-3 col-sm-12 active">
+                      <i class="icon-features"></i> <div class="text-white">مدیریت آسان</div>
+                    </li>
+                    <li  class="col-lg-3 col-md-3 col-sm-12">
+                      <i class="icon-domainserver"></i> <div class="text-white">API دامنه</div>
+                    </li >
+                    <li  class="col-lg-3 col-md-3 col-sm-12">
+                      <i class="icon-lock"></i> <div class="text-white">قفل دامنه</div>
+                    </li >
+                  </ul>
+                </div>
+                <div class="tabs-content text-left scrollme">
+                  <div class="tabs-item active">
+                    <div class="row">
+                      <div class="col-md-12 col-lg-6">
+                        <img class="svg" src="patterns/controlpanel.svg" alt="monitoring 24/7/365">
+                      </div>
+                      <div class="col-md-12 col-lg-5 offset-lg-1">
+                        <div class="info-content text-white animateme" data-when="enter" data-from="1" data-to="0" data-opacity="1" data-translatey="100" data-easeinout="0">
+                          <h4>سوابق DNS را از طریق یک کنترل پنل با کاربرد آسان تغییر دهید</h4>
+                          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+						  <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+						</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tabs-item">
+                    <div class="row">
+                      <div class="col-md-12 col-lg-6">
+                        <img class="svg" src="patterns/performance.svg" alt="monitoring 24/7/365">
+                      </div>
+                      <div class="col-md-12 col-lg-5 offset-lg-1">
+                        <div class="info-content text-white animateme" data-when="enter" data-from="1" data-to="0" data-opacity="1" data-translatey="100" data-easeinout="0">
+                          <h4>ثبت دامنه های متعدد می تواند در عرض چند ثانیه انجام شود</h4>
+                          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+						  <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+						</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tabs-item">
+                    <div class="row">
+                      <div class="col-md-12 col-lg-6">
+                        <img class="svg" src="patterns/ssl.svg" alt="monitoring 24/7/365">
+                      </div>
+                      <div class="col-md-12 col-lg-5 offset-lg-1">
+                        <div class="info-content text-white animateme" data-when="enter" data-from="1" data-to="0" data-opacity="1" data-translatey="100" data-easeinout="0">
+                          <h4>آن را قفل و باز کنید تا از انتقال غیرمجاز جلوگیری کنید</h4>
+                          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+						  <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+						 </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** FAQ. ***** -->
+  <section class="sec-normal sec-bg2">
+    <div class="faq">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <h2 class="section-heading">سوالات متداول در زمینه دامنه </h2>
+            <p class="section-subheading">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+          </div>
+          <div class="col-sm-12">
+            <div class="accordion faq pt-5">
+              <div class="panel-wrap">
+                <div class="panel-title">
+                  <span>دامنه چیست ؟</span>
+                  <div class="float-right">
+                    <i class="fa fa-plus"></i>
+                    <i class="fa fa-minus c-pink"></i>
+                  </div>
+                </div>
+                <div class="panel-collapse">
+                  <div class="wrapper-collapse">
+                    <div class="info">
+                      <ul class="list">
+                        <li>
+                         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+						  <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+					    </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-wrap">
+                <div class="panel-title">
+                  <span>با نام دامنه چه کاری می توانم انجام دهم؟</span>
+                  <div class="float-right">
+                    <i class="fa fa-plus"></i>
+                    <i class="fa fa-minus c-pink"></i>
+                  </div>
+                </div>
+                <div class="panel-collapse">
+                  <div class="wrapper-collapse">
+                       <div class="info">
+                      <ul class="list">
+                        <li>
+                         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+						  <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+					    </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-wrap">
+                <div class="panel-title">
+                  <span>چه تعداد دامنه می توانم در آنتلر میزبان باشم؟</span>
+                  <div class="float-right">
+                    <i class="fa fa-plus"></i>
+                    <i class="fa fa-minus c-pink"></i>
+                  </div>
+                </div>
+                <div class="panel-collapse">
+                  <div class="wrapper-collapse">
+                    <div class="info">
+                      <ul class="list">
+                        <li>
+                         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+						  <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+					    </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-wrap">
+                <div class="panel-title">
+                  <span>چه دامنه ای باید بخرم؟ </span>
+                  <div class="float-right">
+                    <i class="fa fa-plus"></i>
+                    <i class="fa fa-minus c-pink"></i>
+                  </div>
+                </div>
+                <div class="panel-collapse">
+                  <div class="wrapper-collapse">
+                    <div class="info">
+                      <ul class="list">
+                        <li>
+                         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+						  <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+					    </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** HELP ***** -->
+  <section class="help pt-4 pb-80">
+    <div class="container">
+      <div class="service-wrap">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="help-container">
+              <div class="plans badge feat left bg-grey"><i class="fas fa-long-arrow-alt-right"></i></div>
+              <a href="hosting" class="help-item">
+                <div class="img">
+                  <img class="svg ico" src="fonts/svg/cloudfiber.svg" alt="">
+                </div>
+                <div class="inform">
+					<div class="title">نمایندگی ابری</div>
+					<div class="description">آیا به میزبانی چند وب سایت نیاز دارید؟</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="help-container">
+              <div class="plans badge feat bg-grey"><i class="fas fa-long-arrow-alt-left"></i></div>
+              <a href="vps" class="help-item">
+                <div class="img">
+                  <img class="svg ico" src="fonts/svg/vps.svg" alt="">
+                </div>
+                <div class="inform">
+					<div class="title">وی پی اس ابری</div>
+					<div class="description">آیا به منابع مقیاس پذیر در محیط میزبانی نیاز دارید؟</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ***** UPLOADED FOOTER FROM FOOTER.HTML ***** -->
+<footer id="footer"> </footer>
+<!-- ***** BUTTON GO TOP ***** -->
+<a href="#0" class="cd-top"> <i class="fas fa-angle-up"></i> </a>
+<!-- Javascript -->
+<script src="js/jquery.min.js"></script>
+<script defer src="js/popper.min.js"></script>
+<script defer src="js/bootstrap.min.js"></script>
+<script defer src="js/jquery.countdown.js"></script>
+<script defer src="js/jquery.magnific-popup.min.js"></script>
+<script defer src="js/slick.min.js"></script>
+<script defer src="js/owl.carousel.min.js"></script>
+<script defer src="js/mixitup.min.js"></script>
+<script defer src="js/mixitup.multifilter.min.js"></script>
+<script defer src="js/mixevents.js"></script>
+<script defer src="js/filter.js"></script>
+<script defer src="js/isotope.min.js"></script>
+<script defer src="js/jquery.scrollme.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>new WOW().init();</script>
+<script defer src="js/swiper.min.js"></script>
+<script async src="js/lazysizes.min.js"></script>
+<script defer src="js/scripts.min.js"></script>
+</body>
+</html>
